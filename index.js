@@ -46,7 +46,3 @@ function update() {
 
   display.textContent = `${hours}:${minutes}:${seconds}:${miliSeconds}`;
 }
-
-let x = () => {
-  
-}
