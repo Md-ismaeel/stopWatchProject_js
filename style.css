@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 body {
   height: 100vh;
   width: 100vw;
@@ -11,6 +12,8 @@ body {
   justify-content: center;
   align-items: center;
   background: linear-gradient(45deg, black, transparent);
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .container {
@@ -52,6 +55,7 @@ button {
   padding: 10px;
   cursor: pointer;
 }
+
 #startBtn {
   background-color: hsl(115, 100%, 40%);
 }
@@ -84,7 +88,7 @@ button {
   }
   .container {
     width: 80%;
-    height: 70%;
+    height: 80%;
     display: flex;
     /* flex-direction: column; */
     justify-content: center;
@@ -136,7 +140,7 @@ button {
   }
   .container {
     width: 80%;
-    height: 70%;
+    height: 80%;
     display: flex;
     /* flex-direction: column; */
     justify-content: center;
@@ -180,7 +184,7 @@ button {
 @media screen and (min-width: 377px) and (max-width: 426px) {
   .container {
     width: 80%;
-    height: 70%;
+    height: 80%;
     display: flex;
     /* flex-direction: column; */
     justify-content: center;
@@ -196,7 +200,7 @@ button {
     text-shadow: 2px 2px #f8a5c2;
     color: #f92672;
     text-align: center;
-    margin: 40px auto;
+    margin: 25px auto;
     font-family: monospace;
   }
 
@@ -205,7 +209,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 10px;
     margin-bottom: 2rem;
   }
 
@@ -224,7 +228,49 @@ button {
 @media screen and (min-width: 427px) and (max-width: 768px) {
   .container {
     width: 60%;
-    height: 55%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #c5c5c5;
+    filter: drop-shadow(2px 4px 6px white);
+    border-radius: 2rem;
+  }
+
+  #display {
+    font-size: 4rem;
+    font-weight: 700;
+    text-shadow: 2px 2px #f8a5c2;
+    color: #f92672;
+    text-align: center;
+    margin: 30px auto;
+    font-family: monospace;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  button {
+    width: 7rem;
+    height: 3rem;
+    border: 0;
+    border-radius: 40px;
+    font-size: 1.4rem;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    width: 60%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
